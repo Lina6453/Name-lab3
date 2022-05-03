@@ -7,6 +7,7 @@ namespace Name2
         private int p;
         string name;
         const double k = 1.5;
+        string age;
         public Person (string nm)
         {
             name = nm;
@@ -14,6 +15,14 @@ namespace Name2
         public string GetName()
         {
             return name;
+        }
+        public Person (string ag)
+        {
+            age = ag;
+        }
+        public string GetAge()
+        {
+            return age;
         }
         public int Dohod(int p)
         {
@@ -29,6 +38,8 @@ namespace Name2
             Console.WriteLine("Введите Минимальный доход");
             string u  = Console.ReadLine();
             int f = Convert.ToInt32(u);
+            Console.WriteLine("Введите возраст");
+            string s = Console.ReadLine;
             Person q = new Person(k);
             Console.WriteLine( "Имя=  " + q.GetName());
             Person n = new Person(u);
