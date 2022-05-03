@@ -28,6 +28,10 @@ namespace Name2
         {
             return Convert.ToInt32(Math.Abs(p * k));
         }
+        public MaxDohod (int p)
+        {
+            return Convert.ToInt32(Math.Abs(p * o));
+        }
     }
     class Program
     {
@@ -44,6 +48,8 @@ namespace Name2
             Console.WriteLine( "Имя=  " + q.GetName());
             Person n = new Person(u);
             Console.WriteLine("Доход=  " + n.Dohod(f).ToString());
+            Person t = new Person(u);
+            Console.WriteLine("МаксДоход = " + t.MaxDohod(f).ToString());
             Console.ReadKey();
         }
     }
